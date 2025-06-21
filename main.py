@@ -1,7 +1,7 @@
 import flet as ft
 import requests
 import json
-
+import os
 
 def main(page: ft.Page):
 	# === main page settings =========================================================================================================;
@@ -10,7 +10,9 @@ def main(page: ft.Page):
 	#page.window.height = 400
 
 	# - top labels ---
-	label1 = ft.Text( "Kelly's To do App 2.0",size = 20 ,weight=ft.FontWeight.BOLD)
+	label1 = ft.Text( "Kelly's To do App 2.1",size = 20 ,weight=ft.FontWeight.BOLD)
+	test_tekst = os.getenv("test")
+	label3 = ft.Text(test_tekst,size = 14 ,weight=ft.FontWeight.BOLD)
 
 	# --- Load firebas ----
 	#Read database
@@ -54,6 +56,7 @@ def main(page: ft.Page):
 		ft.Column(
 			controls=[
 				ft.Row([label1]),
+				ft.Row([label3]),
 				ft.Row([label2]),
 				ft.Row([input_box]),
 				ft.Row([submit_btn]),
