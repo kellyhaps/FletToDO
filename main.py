@@ -6,11 +6,11 @@ import json
 def main(page: ft.Page):
 	# === main page settings =========================================================================================================;
 	page.title = "To Do App"
-	page.window.width = 450
-	page.window.height = 400
+	#page.window.width = 450
+	#page.window.height = 400
 
 	# - top labels ---
-	label1 = ft.Text( "Kelly's To do App",size = 20 ,weight=ft.FontWeight.BOLD)
+	label1 = ft.Text( "Kelly's To do App 2.0",size = 20 ,weight=ft.FontWeight.BOLD)
 
 	# --- Load firebas ----
 	#Read database
